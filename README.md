@@ -50,9 +50,19 @@ Los headers de seguridad y la CSP los aplica Vercel en producción, no el servid
 
 ## Despliegue
 
+**Automático.** El proyecto de Vercel está conectado a este repositorio:
+
+| Acción | Resultado |
+|---|---|
+| `git push` a `main` | Despliegue a **producción** |
+| `git push` a otra rama | Despliegue de **preview** con URL propia |
+| Pull request | Preview automático comentado en el PR |
+
+No hace falta correr nada a mano. Para forzar un despliegue sin commit:
+
 ```bash
-vercel --yes          # preview, para verificar
-vercel --prod --yes   # promover a producción
+vercel --yes          # preview
+vercel --prod --yes   # producción
 ```
 
 ## Seguridad
