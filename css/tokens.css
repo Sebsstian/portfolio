@@ -1,0 +1,68 @@
+/* ============================================
+   Design tokens — Sebastián Saavedra
+   Dirección: editorial oscuro. Serif para prosa,
+   monoespaciada para etiquetas, datos y tags.
+   ============================================ */
+:root {
+  /* Surfaces */
+  --color-bg: oklch(15% 0.008 260);
+  --color-bg-raised: oklch(18.5% 0.009 260);
+  --color-surface: oklch(21% 0.01 260);
+  --color-surface-hover: oklch(24% 0.012 260);
+  --color-border: oklch(30% 0.012 260);
+  --color-border-soft: oklch(24% 0.01 260);
+  --color-hairline: oklch(27% 0.01 260);
+
+  /* Text */
+  --color-text: oklch(94% 0.006 90);
+  --color-text-muted: oklch(72% 0.01 260);
+  --color-text-faint: oklch(62% 0.01 260);
+
+  /* Accent — ámbar */
+  --color-accent: oklch(78% 0.14 75);
+  --color-accent-strong: oklch(70% 0.16 65);
+  --color-accent-soft: oklch(78% 0.14 75 / 0.12);
+  --color-accent-border: oklch(78% 0.14 75 / 0.35);
+
+  /* Acentos secundarios */
+  --color-green: oklch(75% 0.12 155);
+  --color-green-soft: oklch(75% 0.12 155 / 0.12);
+  --color-blue: oklch(75% 0.1 240);
+  --color-blue-soft: oklch(75% 0.1 240 / 0.12);
+
+  /* Typography — dos familias, según el presupuesto de fuentes */
+  --font-serif: "Newsreader", "Iowan Old Style", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* Escala: la prosa serif pide algo más de cuerpo que una sans */
+  --text-2xs: 0.6875rem;
+  --text-xs: 0.75rem;
+  --text-sm: 0.8125rem;
+  --text-base: clamp(1.0625rem, 1rem + 0.3vw, 1.1875rem);
+  --text-lg: clamp(1.2rem, 1.05rem + 0.6vw, 1.45rem);
+  --text-xl: clamp(1.5rem, 1.25rem + 1.2vw, 2.1rem);
+  --text-display: clamp(2.6rem, 1.6rem + 4.6vw, 4.6rem);
+
+  --leading-tight: 1.1;
+  --leading-snug: 1.35;
+  --leading-prose: 1.65;
+
+  /* Spacing */
+  --space-section: clamp(4rem, 2.5rem + 5.5vw, 7.5rem);
+  --space-block: clamp(1.5rem, 1rem + 2vw, 2.5rem);
+  --content-width: 61rem;
+  --gutter: clamp(1.25rem, 0.75rem + 2vw, 2.5rem);
+
+  /* Motion */
+  --duration-fast: 160ms;
+  --duration-normal: 300ms;
+  --duration-slow: 620ms;
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Misc */
+  --radius-sm: 5px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --shadow-card: 0 1px 0 oklch(100% 0 0 / 0.03) inset,
+    0 10px 26px oklch(0% 0 0 / 0.3);
+}

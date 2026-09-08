@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sebastián Saavedra — Ingeniería Civil Industrial</title>
+  <meta name="description" content="Sebastián Nicolás Saavedra González. Ingeniería Civil Industrial (UCSC), memorista en Excelencia Operacional de Viña Concha y Toro. Automatización low-code con Power Platform, mejora continua y análisis de datos." />
+  <meta property="og:title" content="Sebastián Saavedra — Ingeniería Civil Industrial" />
+  <meta property="og:description" content="Automatización de procesos con Power Platform, mejora continua y análisis de datos. Memorista en Excelencia Operacional de Viña Concha y Toro." />
+  <meta property="og:type" content="profile" />
+  <meta property="og:locale" content="es_CL" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="img/hero-atmosphere.webp" fetchpriority="high" />
+  <!-- ?v= obligatorio: una versión anterior se sirvió con Cache-Control
+       immutable a un año. Subir el número en cada cambio de CSS o JS. -->
+  <link rel="stylesheet" href="css/tokens.css?v=6" />
+  <link rel="stylesheet" href="css/base.css?v=6" />
+  <link rel="stylesheet" href="css/layout.css?v=6" />
+  <link rel="stylesheet" href="css/components.css?v=6" />
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Saltar al contenido</a>
+  <div class="read-progress" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="frame" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="#top">sebastián<span class="dot">.</span>saavedra</a>
+      <div class="header-right">
+        <nav class="main-nav" aria-label="Navegación principal">
+          <ul>
+            <li><a href="#experiencia" data-i18n="nav.exp">Experiencia</a></li>
+            <li><a href="#proyectos" data-i18n="nav.projects">Proyectos</a></li>
+            <li><a href="#educacion" data-i18n="nav.edu">Educación</a></li>
+            <li><a href="#certificaciones" data-i18n="nav.certs">Certificaciones</a></li>
+            <li><a href="#stack" data-i18n="nav.stack">Stack</a></li>
+            <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Idioma / Language">
+          <button type="button" data-lang="es" aria-pressed="true">ES</button>
+          <span class="sep" aria-hidden="true">/</span>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <img class="hero-atmosphere" src="img/hero-atmosphere.webp" alt="" role="presentation"
+           width="2400" height="1018" fetchpriority="high" decoding="async" />
+      <div class="wrap hero-grid">
+        <div>
+          <h1 id="hero-heading">Sebastián Saavedra</h1>
+          <p class="hero-role" data-i18n="hero.role">Ingeniero Civil Industrial</p>
+          <p class="hero-tagline" data-i18n="hero.tagline">
+            Convierto procesos manuales en soluciones que se miden solas. Me interesa
+            entender por qué existe cada paso antes de automatizarlo.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contacto" data-i18n="hero.cta">Hablemos</a>
+            <a class="btn" href="#proyectos" data-i18n="hero.cta2">Ver proyectos</a>
+            <a class="btn" href="https://www.linkedin.com/in/sebastian-saavedra-gonz%C3%A1lez-b7bb00267" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+        <aside class="hero-aside">
+          <p class="hero-status" data-i18n="hero.status">Memorista en Viña Concha y Toro</p>
+          <p class="hero-note" data-i18n="hero.note">
+            La mejor automatización no acelera el paso: lo elimina.
+          </p>
+          <div class="aside-block">
+            <span class="label" data-i18n="hero.basedIn">Ubicación</span>
+            <p class="aside-value">Santiago, CL — UTC-4</p>
+          </div>
+          <div class="aside-block">
+            <span class="label" data-i18n="hero.stackNow">Stack actual</span>
+            <div class="tags">
+              <span class="tag is-key">Power Apps</span>
+              <span class="tag is-key">Power Automate</span>
+              <span class="tag is-key">Power BI</span>
+              <span class="tag">SharePoint</span>
+              <span class="tag">SAP</span>
+              <span class="tag">Excel</span>
+            </div>
+          </div>
+          <div class="aside-block">
+            <span class="label" data-i18n="hero.langs">Idiomas</span>
+            <div class="tags">
+              <span class="tag is-key" data-i18n="lang.es">Español · Nativo</span>
+              <span class="tag is-key" data-i18n="lang.en">Inglés · B2</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ================= MARQUESINA ================= -->
+    <section class="marquee-band" aria-labelledby="marquee-label">
+      <span class="label" id="marquee-label" data-i18n="marquee.label">Donde he trabajado y estudiado</span>
+      <div class="marquee-viewport">
+        <ul class="marquee-track">
+          <li><img class="logo-mark logo-mark--cyt" src="img/logos/cyt.webp" alt="Viña Concha y Toro" width="874" height="128" loading="lazy" decoding="async" /></li>
+          <li><img class="logo-mark logo-mark--ponsse" src="img/logos/ponsse.webp" alt="Ponsse" width="1024" height="128" loading="lazy" decoding="async" /></li>
+          <li><img class="logo-mark logo-mark--watts" src="img/logos/watts.webp" alt="Watt's" width="202" height="128" loading="lazy" decoding="async" /></li>
+          <li><img class="logo-mark logo-mark--svti" src="img/logos/svti.webp" alt="SVTI · San Vicente Terminal Internacional" width="129" height="128" loading="lazy" decoding="async" /></li>
+          <li><img class="logo-mark logo-mark--ucsc" src="img/logos/ucsc.webp" alt="Universidad Católica de la Santísima Concepción" width="118" height="128" loading="lazy" decoding="async" /></li>
+        </ul>
+        <ul class="marquee-track" aria-hidden="true">
+          <li><img class="logo-mark logo-mark--cyt" src="img/logos/cyt.webp" alt="" width="874" height="128" loading="lazy" decoding="async" /></li>
+          <li><img class="logo-mark logo-mark--ponsse" src="img/logos/ponsse.webp" alt="" width="1024" height="128" loading="lazy" decoding="async" /></li>
+          <li><img class="logo-mark logo-mark--watts" src="img/logos/watts.webp" alt="" width="202" height="128" loading="lazy" decoding="async" /></li>
+          <li><img class="logo-mark logo-mark--svti" src="img/logos/svti.webp" alt="" width="129" height="128" loading="lazy" decoding="async" /></li>
+          <li><img class="logo-mark logo-mark--ucsc" src="img/logos/ucsc.webp" alt="" width="118" height="128" loading="lazy" decoding="async" /></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCIA ================= -->
+    <section class="section" id="experiencia" aria-labelledby="exp-heading">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="label" id="exp-heading" data-i18n="exp.label">Experiencia</span>
+        </div>
+        <div class="timeline">
+          <article class="entry is-current reveal">
+            <p class="entry-date">Jul 2026 — <span data-i18n="present">presente</span></p>
+            <h3><span data-i18n="exp.cyt.title">Práctica y Memoria de Título</span> <span class="at">· Viña Concha y Toro</span></h3>
+            <p class="entry-role" data-i18n="exp.cyt.role">Gerencia de Excelencia Operacional y Procesos Corporativos</p>
+            <ul class="entry-list">
+              <li data-i18n="exp.cyt.b1">Automatización de procesos manuales con el ecosistema <strong>Power Platform</strong> (Power Apps, Power Automate, Power BI y SharePoint), midiendo el impacto en horas-hombre liberadas.</li>
+              <li data-i18n="exp.cyt.b2">Responsable funcional y técnico de una solución corporativa de <strong>órdenes de pago y acuerdos comerciales</strong>: estabilización de la aplicación, corrección de los flujos de aprobación, gobernanza de conexiones con cuenta de servicio y traspaso a TI con respaldo, evidencia y plan de UAT.</li>
+              <li data-i18n="exp.cyt.b3">Diseño de una <strong>plataforma de visualización en Power BI</strong> para el seguimiento de la inducción de nuevos ingresos, con modelo de datos propio y control de acceso por usuario.</li>
+              <li data-i18n="exp.cyt.b4">Levantamiento de procesos AS-IS, especificación de requerimientos y propuestas por fases, definiendo desde el diseño el dueño del proceso, el SLA y los indicadores.</li>
+              <li data-i18n="exp.cyt.b5"><strong>Capacitación interna en IA aplicada</strong>: preparé y dicté una charla para el área sobre uso responsable, manejo de datos corporativos y la diferencia entre asistentes y agentes.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag is-key">Power Apps</span>
+              <span class="tag is-key">Power Automate</span>
+              <span class="tag is-key">Power BI</span>
+              <span class="tag">SharePoint</span>
+              <span class="tag">SAP VIM</span>
+              <span class="tag">Copilot Studio</span>
+              <span class="tag">Office Scripts</span>
+              <span class="tag">Power Query</span>
+            </div>
+          </article>
+
+          <article class="entry reveal">
+            <p class="entry-date">Ene 2026 — Feb 2026</p>
+            <h3><span data-i18n="exp.ponsse.title">Práctica en Recursos Humanos</span> <span class="at">· Ponsse Uruguay</span></h3>
+            <p class="entry-role" data-i18n="exp.ponsse.role">People, Safety &amp; Culture</p>
+            <ul class="entry-list">
+              <li data-i18n="exp.ponsse.b1">Apoyo al área de Recursos Humanos en el desarrollo organizacional de la filial en Uruguay.</li>
+              <li data-i18n="exp.ponsse.b2">Elaboración de un procedimiento para el área, ajustándolo según el feedback del equipo.</li>
+              <li data-i18n="exp.ponsse.b3">Gestión de procesos de onboarding de nuevos trabajadores y orientación sobre trámites internos.</li>
+              <li data-i18n="exp.ponsse.b4">Colaboración con profesionales de Latinoamérica y Europa en un entorno multicultural.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag is-key" data-i18n="tag.orgdev">Desarrollo organizacional</span>
+              <span class="tag" data-i18n="tag.onboarding">Onboarding</span>
+              <span class="tag" data-i18n="tag.procedures">Procedimientos</span>
+              <span class="tag" data-i18n="tag.multicultural">Equipos multiculturales</span>
+            </div>
+          </article>
+
+          <article class="entry reveal">
+            <p class="entry-date">Ene 2025 — Mar 2025</p>
+            <h3><span data-i18n="exp.watts.title">Práctica en Procesos Industriales</span> <span class="at">· Watt's S.A., Planta Chillán</span></h3>
+            <p class="entry-role" data-i18n="exp.watts.role">Aseguramiento de calidad</p>
+            <ul class="entry-list">
+              <li data-i18n="exp.watts.b1">Control de gestión de calidad en los procesos productivos de la planta láctea (Watt's produce la marca Danone en Chile bajo licencia).</li>
+              <li data-i18n="exp.watts.b2">Proyecto Kaizen de <strong>reducción de tiempos de aseo CIP</strong>: análisis de datos de ciclos de limpieza e identificación de tiempos muertos.</li>
+              <li data-i18n="exp.watts.b3">Control y seguimiento de inventario de insumos y materias primas.</li>
+              <li data-i18n="exp.watts.b4">Evaluación de las gestiones operativas, logísticas y de producción de la planta.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag is-key">Kaizen</span>
+              <span class="tag" data-i18n="tag.quality">Gestión de calidad</span>
+              <span class="tag">CIP</span>
+              <span class="tag" data-i18n="tag.dataanalysis">Análisis de datos</span>
+              <span class="tag" data-i18n="tag.inventory">Inventario</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROYECTOS ================= -->
+    <section class="section" id="proyectos" aria-labelledby="proj-heading">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="label" id="proj-heading" data-i18n="proj.label">Proyectos</span>
+          <p class="section-lead" data-i18n="proj.lead">
+            Soluciones corporativas en producción y proyectos universitarios aplicados en
+            empresas reales de la Región del Biobío. Cada uno indica las herramientas y la
+            metodología que utilicé.
+          </p>
+        </div>
+
+        <div class="tabs" role="tablist" aria-label="Tipo de proyecto">
+          <button class="tab" role="tab" id="tab-corp" aria-controls="panel-corp" aria-selected="true" data-i18n="proj.tab1">Corporativos</button>
+          <button class="tab" role="tab" id="tab-acad" aria-controls="panel-acad" aria-selected="false" data-i18n="proj.tab2">Académicos</button>
+        </div>
+
+        <!-- ---- Corporativos ---- -->
+        <div class="cards-stack tabpanel" id="panel-corp" role="tabpanel" aria-labelledby="tab-corp">
+          <article class="card reveal">
+            <div class="card-figure card-figure--diagram">
+              <svg class="card-diagram" viewBox="0 0 300 200" role="img" aria-labelledby="dg-ordenes">
+                <title id="dg-ordenes">Flujo de una solicitud: solicitud, aprobación, número VIM en SAP y cierre como aprobada</title>
+                <path class="dg-line" d="M32 30 V156" />
+                <circle class="dg-node" cx="32" cy="30" r="5" />
+                <circle class="dg-node" cx="32" cy="72" r="5" />
+                <circle class="dg-node" cx="32" cy="114" r="5" />
+                <circle class="dg-node dg-node--active" cx="32" cy="156" r="6.5" />
+                <text class="dg-label" x="52" y="34">Solicitud</text>
+                <text class="dg-label" x="52" y="76">Aprobación</text>
+                <text class="dg-label" x="52" y="118">VIM · SAP</text>
+                <text class="dg-label dg-label--active" x="52" y="160">Aprobada</text>
+                <text class="dg-caption" x="32" y="186">Una sola app, de la solicitud al cierre</text>
+              </svg>
+            </div>
+            <div class="card-head">
+              <h3 data-i18n="proj.ordenes.title">Órdenes de pago y acuerdos comerciales</h3>
+              <span class="card-meta">VIÑA CONCHA Y TORO</span>
+            </div>
+            <div class="card-body">
+              <p data-i18n="proj.ordenes.desc">
+                Solución corporativa para solicitar, aprobar y cerrar órdenes de pago. Recibí la
+                solución heredada y la estabilicé: mapeo completo de variables de entorno y
+                conexiones, reparación de los flujos de aprobación que no activaban, reemplazo de
+                la regla de sociedad por una relación correo–sociedad–rol, y plan de UAT y
+                traspaso a TI con respaldo inmutable.
+              </p>
+              <dl class="card-method">
+                <dt data-i18n="method.tools">Herramientas</dt>
+                <dd>Power Apps (canvas) · Power Automate · SharePoint · SAP VIM</dd>
+                <dt data-i18n="method.method">Metodología</dt>
+                <dd data-i18n="proj.ordenes.method">Estabilización sobre línea base versionada, gobernanza de conexiones con cuenta de servicio, UAT con usuarios del proceso y documento de traspaso.</dd>
+              </dl>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-figure card-figure--diagram">
+              <svg class="card-diagram" viewBox="0 0 300 200" role="img" aria-labelledby="dg-induccion">
+                <title id="dg-induccion">Ruta de etapas con el avance de una persona a lo largo del proceso</title>
+                <text class="dg-caption" x="40" y="52" data-i18n="dg.induccion.top">Avance por persona</text>
+                <path class="dg-line" d="M40 96 H262" />
+                <path class="dg-line dg-line--active" d="M40 96 H154" stroke-width="2.5" />
+                <circle class="dg-node dg-node--active" cx="40" cy="96" r="6" />
+                <circle class="dg-node dg-node--active" cx="116" cy="96" r="6" />
+                <circle class="dg-node" cx="192" cy="96" r="5" />
+                <circle class="dg-node" cx="262" cy="96" r="5" />
+                <text class="dg-caption dg-label--active" x="40" y="124" text-anchor="middle" data-i18n="dg.stage1">Etapa 1</text>
+                <text class="dg-caption dg-label--active" x="116" y="124" text-anchor="middle" data-i18n="dg.stage2">Etapa 2</text>
+                <text class="dg-caption" x="192" y="124" text-anchor="middle" data-i18n="dg.stage3">Etapa 3</text>
+                <text class="dg-caption" x="262" y="124" text-anchor="middle" data-i18n="dg.stage4">Etapa 4</text>
+              </svg>
+            </div>
+            <div class="card-head">
+              <h3 data-i18n="proj.induccion.title">Plataforma de seguimiento de inducción</h3>
+              <span class="card-meta" data-i18n="proj.induccion.meta">EN DISEÑO</span>
+            </div>
+            <div class="card-body">
+              <p data-i18n="proj.induccion.desc">
+                Estoy diseñando una plataforma de visualización para el proceso de inducción de
+                nuevos ingresos: que cada persona pueda ver en qué etapa va y cuál es su próximo
+                paso, y que el equipo a cargo tenga una vista del grupo completo, sin depender del
+                seguimiento manual.
+              </p>
+              <dl class="card-method">
+                <dt data-i18n="method.tools">Herramientas</dt>
+                <dd>Power BI · Excel</dd>
+                <dt data-i18n="method.method">Metodología</dt>
+                <dd data-i18n="proj.induccion.method">Levantamiento del proceso con el área solicitante y definición de las etapas y el modelo de datos antes de construir.</dd>
+              </dl>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-figure card-figure--diagram">
+              <svg class="card-diagram" viewBox="0 0 300 200" role="img" aria-labelledby="dg-fondos">
+                <title id="dg-fondos">Pipeline de datos: del Excel de entrada a Office Script, luego Power Query y finalmente Power BI</title>
+                <text class="dg-caption" x="18" y="40">Pipeline mensual, sin doble digitación</text>
+                <path class="dg-line" d="M62 88 H88 M132 88 H158 M202 88 H228" />
+                <rect class="dg-box" x="18" y="70" width="36" height="36" rx="7" />
+                <rect class="dg-box" x="88" y="70" width="36" height="36" rx="7" />
+                <rect class="dg-box" x="158" y="70" width="36" height="36" rx="7" />
+                <rect class="dg-box dg-box--active" x="228" y="70" width="36" height="36" rx="7" />
+                <text class="dg-caption" x="36" y="128" text-anchor="middle">Excel</text>
+                <text class="dg-caption" x="106" y="128" text-anchor="middle">Office</text>
+                <text class="dg-caption" x="106" y="139" text-anchor="middle">Script</text>
+                <text class="dg-caption" x="176" y="128" text-anchor="middle">Power</text>
+                <text class="dg-caption" x="176" y="139" text-anchor="middle">Query</text>
+                <text class="dg-caption dg-label--active" x="246" y="128" text-anchor="middle">Power BI</text>
+                <text class="dg-caption" x="18" y="176">Sin manipulación manual de planillas</text>
+              </svg>
+            </div>
+            <div class="card-head">
+              <h3 data-i18n="proj.fondos.title">Consolidación de fondos por rendir</h3>
+              <span class="card-meta" data-i18n="proj.fondos.meta">CUENTAS POR PAGAR</span>
+            </div>
+            <div class="card-body">
+              <p data-i18n="proj.fondos.desc">
+                Automatización del consolidado mensual de fondos por rendir y del bloqueo de
+                tarjetas, con una salida de contrato de datos definido hacia Power BI que elimina
+                la manipulación manual de planillas.
+              </p>
+              <dl class="card-method">
+                <dt data-i18n="method.tools">Herramientas</dt>
+                <dd>Office Scripts (TypeScript) · Power Query (M) · Power Automate · Power BI</dd>
+                <dt data-i18n="method.method">Metodología</dt>
+                <dd data-i18n="proj.fondos.method">Especificación del archivo de entrada, contrato de datos versionado entre etapas y medidas definidas antes de construir el tablero.</dd>
+              </dl>
+            </div>
+          </article>
+        </div>
+
+        <!-- ---- Académicos ---- -->
+        <div class="cards-stack tabpanel" id="panel-acad" role="tabpanel" aria-labelledby="tab-acad" hidden>
+          <article class="card reveal">
+            <div class="card-figure">
+              <img src="img/puerto-svti.webp" alt="Grúas pórtico de San Vicente Terminal Internacional operando sobre un portacontenedores atracado, con contenedores apilados en el patio" width="1400" height="1050" loading="lazy" decoding="async" />
+            </div>
+            <div class="card-head">
+              <h3>SmartYard — Puerto San Vicente (SVTI)</h3>
+              <span class="card-meta" data-i18n="proj.smartyard.meta">INNOVACIÓN EN PRODUCTOS Y SERVICIOS</span>
+            </div>
+            <div class="card-body">
+              <p data-i18n="proj.smartyard.desc">
+                Propuesta de innovación para el patio de contenedores de San Vicente Terminal
+                Internacional: inteligencia que ordena el patio para atacar ~2.000 remanejos
+                mensuales (≈ US$200.000/año en movimientos falsos). Levantamos el dolor en terreno
+                con el jefe de logística de patio, mapeamos el proceso y diseñamos un prototipo de
+                dashboard de planificación. Fue destacado por el propio jefe de logística.
+              </p>
+              <dl class="card-method">
+                <dt data-i18n="method.tools">Herramientas</dt>
+                <dd data-i18n="proj.smartyard.tools">Excel avanzado · Análisis de memorias anuales SVTI 2021–2025 · Prototipo de dashboard</dd>
+                <dt data-i18n="method.method">Metodología</dt>
+                <dd data-i18n="proj.smartyard.method">Visita a terreno y entrevista con el dueño del proceso, mapeo del flujo, matriz de impacto vs. factibilidad, propuesta de valor y pitch.</dd>
+              </dl>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-head">
+              <h3 data-i18n="proj.arauco.title">Reducción del tiempo de atención de camiones</h3>
+              <span class="card-meta">ARAUCO S.A. · GESTIÓN LEAN</span>
+            </div>
+            <div class="card-body">
+              <p data-i18n="proj.arauco.desc">
+                Proyecto de mejora sobre la recepción de camiones con rollizos en Arauco S.A.
+                Medimos 445 camiones: 35:53 min de permanencia promedio contra un estándar interno
+                de 33:00, con el 68% del exceso concentrado en el turno de tarde por la cola de una
+                única grúa. Cuantificamos cuatro mudas, levantamos el VSM del estado actual y
+                propusimos las contramedidas en formato A3.
+              </p>
+              <dl class="card-method">
+                <dt data-i18n="method.tools">Herramientas</dt>
+                <dd data-i18n="proj.arauco.tools">Value Stream Map · Diagrama de Ishikawa (6M) · Cinco porqués · A3 · Excel</dd>
+                <dt data-i18n="method.method">Metodología</dt>
+                <dd data-i18n="proj.arauco.method">Ciclo DMAIC completo: definir mudas, medir con datos reales de portería, analizar causa raíz, proponer contramedidas y definir el plan de control.</dd>
+              </dl>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-head">
+              <h3 data-i18n="proj.ruteo.title">Ruteo — Carpooling nocturno</h3>
+              <span class="card-meta" data-i18n="proj.ruteo.meta">PROYECTO INTEGRADOR ECONÓMICO</span>
+            </div>
+            <div class="card-body">
+              <p data-i18n="proj.ruteo.desc">
+                Carpooling universitario verificado para el Gran Concepción en la franja 22:00–06:00,
+                pensado para el trayecto nocturno que hoy no tiene alternativa segura. Incluye estudio
+                de mercado, prototipo de la aplicación y evaluación económica completa.
+              </p>
+              <dl class="card-method">
+                <dt data-i18n="method.tools">Herramientas</dt>
+                <dd data-i18n="proj.ruteo.tools">Excel financiero · Prototipo de app · Encuesta de mercado</dd>
+                <dt data-i18n="method.method">Metodología</dt>
+                <dd data-i18n="proj.ruteo.method">Estudio de factibilidad, flujo de caja proyectado y evaluación con VAN y TIR en tres escenarios de financiamiento.</dd>
+              </dl>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-head">
+              <h3 data-i18n="proj.brew.title">BrewMaster — Política de aprovisionamiento</h3>
+              <span class="card-meta" data-i18n="proj.brew.meta">GESTIÓN DE APROVISIONAMIENTO</span>
+            </div>
+            <div class="card-body">
+              <p data-i18n="proj.brew.desc">
+                Política de inventario y compras para una distribuidora de café: pronóstico de
+                demanda con Holt-Winters (MAPE 2,63%), lote económico de pedido, stock de seguridad
+                bajo incertidumbre y la conexión entre decisiones de inventario y transporte.
+              </p>
+              <dl class="card-method">
+                <dt data-i18n="method.tools">Herramientas</dt>
+                <dd data-i18n="proj.brew.tools">Excel avanzado · Holt-Winters · EOQ</dd>
+                <dt data-i18n="method.method">Metodología</dt>
+                <dd data-i18n="proj.brew.method">Selección del método de pronóstico por error de ajuste, cálculo del lote económico y dimensionamiento del stock de seguridad según nivel de servicio.</dd>
+              </dl>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-head">
+              <h3>Conecta BioBío</h3>
+              <span class="card-meta" data-i18n="proj.conecta.meta">DESAFÍO START-UP UCSC</span>
+            </div>
+            <div class="card-body">
+              <p data-i18n="proj.conecta.desc">
+                Prototipo funcional de aplicación móvil para conectar emprendedores y servicios de la
+                Región del Biobío. Diseñé el flujo de usuarios, la arquitectura de la app y el modelo
+                económico del negocio, que defendimos en un pitch final.
+              </p>
+              <dl class="card-method">
+                <dt data-i18n="method.tools">Herramientas</dt>
+                <dd data-i18n="proj.conecta.tools">Prototipo SPA (HTML · CSS · JavaScript) · Modelo económico en Excel</dd>
+                <dt data-i18n="method.method">Metodología</dt>
+                <dd data-i18n="proj.conecta.method">Validación de la propuesta de valor, diseño del modelo de negocio y proyección económica defendida ante un panel.</dd>
+              </dl>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-head">
+              <h3 data-i18n="proj.cip.title">Kaizen — Reducción de tiempos CIP</h3>
+              <span class="card-meta" data-i18n="proj.cip.meta">WATT'S · PLANTA CHILLÁN</span>
+            </div>
+            <div class="card-body">
+              <p data-i18n="proj.cip.desc">
+                Proyecto Kaizen en planta láctea para reducir los tiempos de aseo CIP (Clean In
+                Place): análisis de los datos de ciclos de limpieza, identificación de tiempos
+                muertos y propuestas para bajar el costo operacional del proceso.
+              </p>
+              <dl class="card-method">
+                <dt data-i18n="method.tools">Herramientas</dt>
+                <dd data-i18n="proj.cip.tools">Excel · Registros de ciclos CIP</dd>
+                <dt data-i18n="method.method">Metodología</dt>
+                <dd data-i18n="proj.cip.method">Kaizen: observación del proceso en planta, análisis de los datos históricos de lavado y propuesta de mejora con entregables para el área de calidad.</dd>
+              </dl>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EDUCACIÓN ================= -->
+    <section class="section" id="educacion" aria-labelledby="edu-heading">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="label" id="edu-heading" data-i18n="edu.label">Educación</span>
+        </div>
+        <div class="timeline">
+          <article class="entry is-current reveal">
+            <p class="entry-date">2021 — 2026</p>
+            <h3><span data-i18n="edu.ici.title">Ingeniería Civil Industrial</span> <span class="at">· UCSC</span></h3>
+            <p class="entry-role">Universidad Católica de la Santísima Concepción</p>
+            <ul class="entry-list">
+              <li data-i18n="edu.ici.b1">Formación en gestión de operaciones, evaluación de proyectos, gestión de aprovisionamiento, Lean e innovación en productos y servicios.</li>
+              <li data-i18n="edu.ici.b2">Proyectos aplicados en empresas reales de la Región del Biobío: Arauco S.A., San Vicente Terminal Internacional y distribución.</li>
+              <li data-i18n="edu.ici.b3">Memoria de título en desarrollo en la Gerencia de Excelencia Operacional de Viña Concha y Toro.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag is-key" data-i18n="tag.ops">Gestión de operaciones</span>
+              <span class="tag" data-i18n="tag.projeval">Evaluación de proyectos</span>
+              <span class="tag">Lean</span>
+              <span class="tag" data-i18n="tag.supply">Aprovisionamiento</span>
+              <span class="tag" data-i18n="tag.innovation">Innovación</span>
+              <span class="tag" data-i18n="tag.hr">Gestión de personas</span>
+            </div>
+          </article>
+
+          <article class="entry reveal">
+            <p class="entry-date">2021 — 2025</p>
+            <h3><span data-i18n="edu.lic.title">Licenciado en Áreas de la Ingeniería</span> <span class="at">· UCSC</span></h3>
+            <ul class="entry-list">
+              <li data-i18n="edu.lic.b1">Grado académico obtenido durante la carrera, con base en ciencias de la ingeniería, matemáticas y gestión.</li>
+            </ul>
+          </article>
+
+          <article class="entry reveal">
+            <p class="entry-date" data-i18n="edu.school.date">Egresado</p>
+            <h3><span data-i18n="edu.school.title">Enseñanza básica y media</span> <span class="at">· Colegio Concepción de Chillán</span></h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CERTIFICACIONES ================= -->
+    <section class="section" id="certificaciones" aria-labelledby="cert-heading">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="label" id="cert-heading" data-i18n="cert.label">Certificaciones</span>
+          <p class="section-lead" data-i18n="cert.lead">
+            Cursos aprobados en la UCSC cuyas credenciales están en trámite en la universidad,
+            más certificaciones externas verificables.
+          </p>
+        </div>
+        <div class="cards-stack">
+          <article class="card reveal">
+            <div class="card-head">
+              <h3 data-i18n="cert.pbi.title">Fundamentos de Power BI <span class="issuer">· UCSC</span></h3>
+              <span class="card-meta">IN1443C · 2025-2</span>
+            </div>
+            <div class="card-body">
+              <p data-i18n="cert.pbi.desc">
+                Curso de Power BI en la Universidad Católica de la Santísima Concepción: modelado
+                de datos, medidas y construcción de tableros. La base que después apliqué al
+                tablero de seguimiento de inducción en Viña Concha y Toro.
+              </p>
+              <div class="tags">
+                <span class="tag is-key">Power BI</span>
+                <span class="tag" data-i18n="tag.datamodel">Modelado de datos</span>
+                <span class="tag" data-i18n="tag.dashboards">Tableros</span>
+                <span class="tag">DAX</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-head">
+              <h3 data-i18n="cert.sap.title">Procesos de negocio con SAP <span class="issuer">· UCSC</span></h3>
+              <span class="card-meta">IN1326C · 2025-1</span>
+            </div>
+            <div class="card-body">
+              <p data-i18n="cert.sap.desc">
+                Introducción a los procesos de negocio claves de las organizaciones con SAP:
+                navegación del sistema y módulos de gestión aplicados a abastecimiento y finanzas.
+                Conocimiento que uso hoy en la integración con SAP VIM.
+              </p>
+              <div class="tags">
+                <span class="tag is-key">SAP ERP</span>
+                <span class="tag" data-i18n="tag.processes">Procesos de negocio</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-head">
+              <h3 data-i18n="cert.innov.title">Innovación en Productos y Servicios <span class="issuer">· UCSC</span></h3>
+              <span class="card-meta">EC0017C · 2026-1</span>
+            </div>
+            <div class="card-body">
+              <p data-i18n="cert.innov.desc">
+                Curso de innovación cursado con el proyecto SmartYard para San Vicente Terminal
+                Internacional, en el desafío LTTS × MEDLOG: levantamiento en terreno, propuesta
+                de valor y pitch ante la contraparte del puerto.
+              </p>
+              <div class="tags">
+                <span class="tag is-key" data-i18n="tag.innovation">Innovación</span>
+                <span class="tag" data-i18n="tag.valueprop">Propuesta de valor</span>
+                <span class="tag" data-i18n="tag.fieldwork">Validación en terreno</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-head">
+              <h3>Claude 101 <span class="issuer">· Anthropic</span></h3>
+            </div>
+            <div class="card-body">
+              <p data-i18n="cert.claude.desc">
+                Curso introductorio de Anthropic sobre Claude: capacidades y familia de modelos,
+                técnicas de prompting y aplicación en flujos de trabajo cotidianos y
+                profesionales. Es la base de la charla de IA aplicada que dicté en el área.
+              </p>
+              <div class="tags">
+                <span class="tag is-key">Claude</span>
+                <span class="tag" data-i18n="tag.prompts">Diseño de prompts</span>
+                <span class="tag" data-i18n="tag.aiworkflows">Flujos con IA</span>
+                <span class="tag" data-i18n="tag.responsibleai">IA responsable</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-head">
+              <h3 data-i18n="cert.eng.title">Inglés — Nivel B2 <span class="issuer">· EF SET</span></h3>
+            </div>
+            <div class="card-body">
+              <p data-i18n="cert.eng.desc">
+                Examen EF SET con resultado B2 según el Marco Común Europeo de Referencia. Nivel
+                de trabajo en entornos multiculturales, aplicado durante la práctica en Ponsse
+                Uruguay con equipos de Latinoamérica y Europa.
+              </p>
+              <div class="tags">
+                <span class="tag is-key">B2 · MCER</span>
+                <span class="tag">EF SET</span>
+                <span class="tag" data-i18n="tag.multicultural">Equipos multiculturales</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STACK ================= -->
+    <section class="section" id="stack" aria-labelledby="stack-heading">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="label" id="stack-heading" data-i18n="stack.label">Stack</span>
+        </div>
+        <div class="stack-grid">
+          <div class="stack-panel reveal">
+            <span class="label">Power Platform</span>
+            <div class="tags">
+              <span class="tag is-key">Power Apps</span>
+              <span class="tag is-key">Power Automate</span>
+              <span class="tag is-key">Power BI</span>
+              <span class="tag">SharePoint</span>
+              <span class="tag">Copilot Studio</span>
+              <span class="tag">DAX</span>
+              <span class="tag">RLS</span>
+            </div>
+          </div>
+          <div class="stack-panel reveal">
+            <span class="label" data-i18n="stack.data">Análisis de datos</span>
+            <div class="tags">
+              <span class="tag is-key" data-i18n="tag.excel">Excel avanzado</span>
+              <span class="tag is-key">Power Query (M)</span>
+              <span class="tag">Office Scripts</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Holt-Winters</span>
+            </div>
+          </div>
+          <div class="stack-panel reveal">
+            <span class="label" data-i18n="stack.erp">Gestión y ERP</span>
+            <div class="tags">
+              <span class="tag is-key">SAP ERP · VIM</span>
+              <span class="tag">Microsoft 365</span>
+              <span class="tag">VAN / TIR</span>
+              <span class="tag">EOQ</span>
+            </div>
+          </div>
+          <div class="stack-panel reveal">
+            <span class="label" data-i18n="stack.ai">IA aplicada</span>
+            <div class="tags">
+              <span class="tag is-key" data-i18n="tag.agents">Agentes corporativos</span>
+              <span class="tag">Claude Code</span>
+              <span class="tag" data-i18n="tag.prompts">Diseño de prompts</span>
+              <span class="tag" data-i18n="tag.training">Capacitación interna</span>
+            </div>
+          </div>
+          <div class="stack-panel reveal">
+            <span class="label" data-i18n="stack.lean">Mejora continua</span>
+            <div class="tags">
+              <span class="tag is-key">Kaizen</span>
+              <span class="tag is-key">DMAIC</span>
+              <span class="tag">VSM</span>
+              <span class="tag">Ishikawa</span>
+              <span class="tag">A3</span>
+              <span class="tag" data-i18n="tag.asis">Mapeo AS-IS</span>
+            </div>
+          </div>
+          <div class="stack-panel reveal">
+            <span class="label" data-i18n="stack.gov">Gobernanza</span>
+            <div class="tags">
+              <span class="tag">UAT</span>
+              <span class="tag" data-i18n="tag.handover">Traspaso a TI</span>
+              <span class="tag" data-i18n="tag.svcaccount">Cuenta de servicio</span>
+              <span class="tag" data-i18n="tag.kpi">Definición de KPIs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SOBRE MÍ ================= -->
+    <section class="section" id="sobre-mi" aria-labelledby="about-heading">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="label" id="about-heading" data-i18n="about.label">Sobre mí</span>
+        </div>
+        <div class="about-grid reveal">
+          <div class="about-text prose">
+            <p data-i18n="about.p1">
+              Soy estudiante de último año de <strong>Ingeniería Civil Industrial</strong> en la
+              Universidad Católica de la Santísima Concepción. Hoy desarrollo mi práctica y memoria
+              de título en la Gerencia de Excelencia Operacional de Viña Concha y Toro, donde
+              construyo soluciones low-code que reemplazan trabajo manual.
+            </p>
+            <p data-i18n="about.p2">
+              Trabajo con una regla simple: la mejor automatización no acelera el paso, lo elimina.
+              Y toda solución debe nacer con un dueño, un indicador y una forma de medirse sola.
+            </p>
+            <p class="about-note" data-i18n="about.p3">
+              Me interesa desarrollar mi carrera en entornos corporativos de alta exigencia,
+              aportando una mirada analítica para la mejora de procesos y la toma de decisiones.
+            </p>
+          </div>
+          <img class="about-photo" src="img/sebastian.webp" alt="Sebastián Saavedra" width="800" height="1066" loading="lazy" decoding="async" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= REFERENCIAS ================= -->
+    <section class="section" id="referencias" aria-labelledby="ref-heading">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="label" id="ref-heading" data-i18n="ref.label">Lo que dicen</span>
+          <p class="section-lead" data-i18n="ref.lead">
+            Extractos de las evaluaciones formales de mis supervisores de práctica.
+          </p>
+        </div>
+        <div class="cards-stack">
+          <article class="quote-card reveal">
+            <blockquote data-i18n="ref.q1">
+              Sebastián trabajó en un proyecto Kaizen enfocado en la reducción de tiempos de aseos
+              CIP realizando un muy buen trabajo. Se destacó por su rapidez y claridad en la
+              ejecución de tareas, logrando que sus entregables fueran comprensibles y útiles.
+              Siempre estuvo dispuesto a cumplir lo solicitado y aportó ideas para la mejora de su
+              trabajo, lo que contribuyó al avance del proyecto.
+            </blockquote>
+            <cite>Joseline Vergara Jofré — <span data-i18n="ref.c1">Jefa de Calidad, Watt's S.A.</span></cite>
+          </article>
+          <article class="quote-card reveal">
+            <blockquote data-i18n="ref.q2">
+              Logró adaptarse e integrarse rápidamente a los equipos de trabajo, sin presentar
+              dificultades. Participó activamente en la elaboración de un procedimiento para el
+              área, demostrando capacidad para ajustarlo en función del feedback recibido por parte
+              del equipo de Recursos Humanos.
+            </blockquote>
+            <cite>Diego Guerrero — <span data-i18n="ref.c2">People, Safety &amp; Culture Manager, Ponsse Uruguay</span></cite>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACTO ================= -->
+    <section class="section" id="contacto" aria-labelledby="contact-heading">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="label" id="contact-heading" data-i18n="contact.label">Contacto</span>
+          <p class="section-lead" data-i18n="contact.lead">
+            Busco oportunidades en excelencia operacional, mejora de procesos y automatización.
+            Si mi perfil calza con tu equipo, escríbeme.
+          </p>
+        </div>
+        <div class="contact-list reveal">
+          <div class="contact-row">
+            <span class="contact-key">email</span>
+            <span class="contact-desc" data-i18n="contact.email">La vía más directa.</span>
+            <a class="contact-value" href="mailto:ssaavedra@ing.ucsc.cl">ssaavedra@ing.ucsc.cl</a>
+          </div>
+          <div class="contact-row">
+            <span class="contact-key">linkedin</span>
+            <span class="contact-desc" data-i18n="contact.linkedin">Trayectoria y actualizaciones.</span>
+            <a class="contact-value" href="https://www.linkedin.com/in/sebastian-saavedra-gonz%C3%A1lez-b7bb00267" target="_blank" rel="noopener">/in/sebastian-saavedra-gonzález</a>
+          </div>
+          <div class="contact-row">
+            <span class="contact-key" data-i18n="contact.phoneKey">teléfono</span>
+            <span class="contact-desc" data-i18n="contact.phone">Chile, horario hábil.</span>
+            <a class="contact-value" href="tel:+56999944997">+56 9 9994 4997</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-id">
+        <strong>Sebastián Saavedra González</strong>
+        <span data-i18n="footer.loc">Santiago, Chile</span>
+      </p>
+      <div class="footer-links">
+        <a href="mailto:ssaavedra@ing.ucsc.cl">email</a>
+        <a href="https://www.linkedin.com/in/sebastian-saavedra-gonz%C3%A1lez-b7bb00267" target="_blank" rel="noopener">linkedin</a>
+      </div>
+      <div class="lang-switch" role="group" aria-label="Idioma / Language">
+        <button type="button" data-lang="es" aria-pressed="true">ES</button>
+        <span class="sep" aria-hidden="true">/</span>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js?v=6" defer></script>
+  <script src="js/main.js?v=6" defer></script>
+</body>
+</html>

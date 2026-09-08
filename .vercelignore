@@ -1,0 +1,9 @@
+.DS_Store
+**/.DS_Store
+
+# Originales de Higgsfield: se conservan en local como fuente,
+# pero al sitio solo suben los .webp optimizados.
+img/gen
+
+# Reemplazados por sus versiones .webp
+img/*.jpg
